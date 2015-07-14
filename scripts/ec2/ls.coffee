@@ -4,14 +4,14 @@
 #
 # Commands:
 #   hubot ec2 ls - Displays all Instances
-#   hubot ec2 ls --instance_id=[instance_id] - Details an Instance
+#   hubot ec2 ls id [instance_id] - Details an Instance
 
 moment = require 'moment'
 util   = require 'util'
 tsv    = require 'tsv'
 
 module.exports = (robot) ->
-  robot.respond /ec2 ls($| --instance_id=)(.*)$/i, (msg) ->
+  robot.respond /ec2 ls($| id )(.*)$/i, (msg) ->
     ins_id = msg.match[2].trim() || ''
 
     msg.send "Fetching #{ins_id}..."
