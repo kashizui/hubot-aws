@@ -3,20 +3,21 @@
   "version": "0.0.5",
   "description": "Hubot masters aws commands",
   "repository": {
-      "type": "git",
-      "url": "ssh://git@github.com/yoheimuta/hubot-aws.git"
+    "type": "git",
+    "url": "ssh://git@github.com/yoheimuta/hubot-aws.git"
   },
   "main": "index.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "aws-sdk": "2.1.23",
-    "tsv": "0.2.0",
+    "ascii-table": "0.0.8",
     "async": "0.9.0",
-    "underscore": "1.8.3",
+    "aws-sdk": "2.1.23",
     "cson": "3.0.1",
-    "moment": "2.10.2"
+    "moment": "2.10.2",
+    "tsv": "0.2.0",
+    "underscore": "1.8.3"
   },
   "keywords": [
     "aws",
